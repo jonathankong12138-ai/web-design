@@ -1,10 +1,35 @@
-# Web Design
+<div align="center">
+  <img src="assets/web-design-chladni.svg" alt="Web Design - particle-field workflow graphic" width="100%" />
 
-Skills for senior designers who want to operate as independent web product builders.
+  <h3>The independent web design operating system for senior designers</h3>
 
-Web Design is a four-stage AI workflow for designers who do not want to stop at mockups or wait for handoffs. It helps a senior designer turn product intent into an interactive prototype, implement the web experience, critique the result, and upgrade the workflow after each project.
+  <p><strong>replace handoffs</strong> · prototype · build · check · retro · one artifact per stage</p>
 
-The goal is not to make designers "do more paperwork." The goal is to replace fragmented upstream and downstream handoffs with artifacts that move the work forward.
+  <p>
+    <img alt="workflow" src="https://img.shields.io/badge/workflow-prototype%20%E2%86%92%20build%20%E2%86%92%20check%20%E2%86%92%20retro-1f6feb?style=flat-square">
+    <img alt="skills" src="https://img.shields.io/badge/skills-4-2ea043?style=flat-square">
+    <img alt="handoffs" src="https://img.shields.io/badge/handoffs-replaced-f97316?style=flat-square">
+    <img alt="artifact rule" src="https://img.shields.io/badge/artifact-one%20per%20stage-8b5cf6?style=flat-square">
+    <img alt="audience" src="https://img.shields.io/badge/for-senior%20designers-eab308?style=flat-square">
+  </p>
+
+  <p>
+    <a href="docs/philosophy.md">Philosophy</a> ·
+    <a href="docs/workflow.md">Workflow</a> ·
+    <a href="docs/output-contracts.md">Output Contracts</a> ·
+    <a href="examples/landing-page.md">Examples</a>
+  </p>
+</div>
+
+---
+
+## What This Is
+
+Web Design is a Codex skill workflow for senior designers who want to operate as independent web product builders.
+
+It is not a design-template pack. It is a compact operating system for taking a web product from intent to prototype, from prototype to code, from code to critique, and from critique to a better personal workflow.
+
+The particle field is the metaphor: scattered intent becomes visible structure. Web Design does the same with product direction. It turns vague briefs, customer asks, and design instincts into artifacts that can be tested, built, and improved.
 
 ## Who This Is For
 
