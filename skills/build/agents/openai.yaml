@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build"
+  short_description: "Implement code that matches the prototype and visual checks."
+  default_prompt: "Build or update the web app code to match the approved prototype and current adjustment checklist."

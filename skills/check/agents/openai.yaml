@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check"
+  short_description: "Inspect the app and return a developer adjustment checklist."
+  default_prompt: "Check the implemented web app against the prototype and return a concrete adjustment checklist for development."

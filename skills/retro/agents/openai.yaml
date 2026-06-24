@@ -1,0 +1,4 @@
+interface:
+  display_name: "Retro"
+  short_description: "Convert task lessons into skill upgrade guidance."
+  default_prompt: "Review the completed web design workflow and produce a Codex-ready skill upgrade guide."

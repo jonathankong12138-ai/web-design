@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prototype"
+  short_description: "Turn product intent into a reviewable interactive prototype."
+  default_prompt: "Create or refine an interactive web prototype from the provided product idea, brief, or PRD."
