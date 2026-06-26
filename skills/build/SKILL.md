@@ -34,6 +34,31 @@ Use these inputs in priority order:
 8. Run the relevant tests, build, typecheck, lint, or browser verification available in the repo.
 9. If verification fails, debug from reproduction to root cause before expanding the change.
 
+## Screenshot-Driven UI Refinements
+
+When refining UI from screenshots or visual QA, start from the visible problem, not from the first matching CSS selector. Classify the issue as spacing, alignment, size, typography, media fit, control density, motion, state synchronization, or section height before editing.
+
+Use this sequence:
+
+1. Identify the actually visible element in browser, including the active breakpoint, state class, slide, clone, or animated phase.
+2. Determine the requested design variable, such as `gap`, `padding`, `font-size`, `line-height`, `font-weight`, `height`, `width`, `object-fit`, `object-position`, `animation-duration`, or a state transition.
+3. Measure before changing: bounding boxes, computed styles, visible overflow, active media query, and current state classes.
+4. Patch the latest responsible layer with the smallest useful scope, preferably the narrowest mobile, tablet, desktop, or component-state rule that owns the rendered result.
+5. Verify after changing with the same measurable value in browser. Do not rely only on visual intuition.
+6. Preserve adjacent constraints: no horizontal overflow, no desktop regression from mobile fixes, no reduced-motion violation, and no patch to hidden DOM mistaken for the visible element.
+
+Map common visual requests to layout primitives:
+
+- For spacing, measure the rendered distance between boxes and set the responsible layout variable.
+- For media that is too small, cropped, or drifting, adjust the media container and `object-fit` or `object-position` together.
+- For typography drift, match `font-size`, `line-height`, `font-weight`, and max-width, not size alone.
+- For sparse or crowded controls, fix the control group's width, alignment, and `gap` before changing individual icons.
+- For rough motion, define entering and leaving states, direction, click guards, timer cleanup, and a reduced-motion fallback.
+- For state synchronization bugs, inspect the visible state source and any cloned, delayed, autoplay, or transition state before patching.
+- For sections that feel too tall or empty, measure content bottom, controls, and section bottom before changing height.
+
+Avoid broad final `!important` patches until the visible element, active state, and responsible CSS layer are known.
+
 ## Code Quality Bar
 
 - Match the prototype behavior and the adjustment checklist.
