@@ -1,0 +1,4 @@
+interface:
+  display_name: "Task Retro Upgrader"
+  short_description: "Turn completed task context into skill upgrade briefs"
+  default_prompt: "Use $task-retro-upgrader to review this completed task and prepare a scoped upgrade brief for the target skill."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Repo Analysis"
+  short_description: "Map project conventions before coding"
+  default_prompt: "Use $figma-web-repo-analysis to inspect this repo before implementing the design."

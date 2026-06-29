@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Visual QA Coach"
+  short_description: "基于 canonical baseline 做全终端视觉/响应式 QA，并生成开发 Codex 修复 prompt。"
+  default_prompt: "Use $frontend-visual-qa-coach 以 canonical baseline 为标准审查移动端、平板、紧凑桌面、标准桌面和宽屏桌面的视觉/响应式问题，输出可交给开发 Codex 继续修改的 prompt，并总结应升级到开发 skill 的底层规则。"

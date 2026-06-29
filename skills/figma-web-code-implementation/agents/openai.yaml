@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Code Implementation"
+  short_description: "Implement mapped Figma web designs"
+  default_prompt: "Use $figma-web-code-implementation to build the mapped design in code."

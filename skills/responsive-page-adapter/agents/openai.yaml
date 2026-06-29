@@ -1,0 +1,4 @@
+interface:
+  display_name: "Responsive Page Adapter"
+  short_description: "Diagnose and fix responsive web layouts"
+  default_prompt: "Use $responsive-page-adapter to diagnose and adapt a responsive page while preserving the canonical desktop behavior."

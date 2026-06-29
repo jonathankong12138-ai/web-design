@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Interaction States"
+  short_description: "Implement web states and interactions"
+  default_prompt: "Use $figma-web-interaction-states to complete the design states and interactions."

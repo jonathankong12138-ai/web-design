@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Design"
+  short_description: "Prepare and gate web design handoffs"
+  default_prompt: "Use $web-design to organize the design handoff, gate build readiness, and produce build entry notes."

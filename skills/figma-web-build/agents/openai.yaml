@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Web Build"
+  short_description: "Orchestrate Figma-to-web implementation"
+  default_prompt: "Use $figma-web-build to implement this Figma design as a web page."

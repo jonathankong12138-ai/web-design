@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Handoff Review"
+  short_description: "Review designs for build readiness"
+  default_prompt: "Use $web-design-handoff-review to check whether this design is ready for development."

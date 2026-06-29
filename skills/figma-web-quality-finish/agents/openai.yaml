@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Quality Finish"
+  short_description: "Finish validation before handoff"
+  default_prompt: "Use $figma-web-quality-finish to finish validation for this Figma-based build."

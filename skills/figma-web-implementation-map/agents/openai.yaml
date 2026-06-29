@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Implementation Map"
+  short_description: "Map design objects to code strategy"
+  default_prompt: "Use $figma-web-implementation-map to plan how this design maps to code."

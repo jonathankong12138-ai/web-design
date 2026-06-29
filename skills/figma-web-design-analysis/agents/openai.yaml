@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Design Analysis"
+  short_description: "Extract implementable design details"
+  default_prompt: "Use $figma-web-design-analysis to analyze this design before coding."

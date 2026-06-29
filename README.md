@@ -1,14 +1,14 @@
 <div align="center">
   <img src="assets/web-design-chladni.svg" alt="Web Design - particle-field workflow graphic" width="100%" />
 
-  <h3>The independent web design operating system for senior designers</h3>
+  <h3>A Codex Web Design skill suite for prototype, design, build, check, and retro</h3>
 
-  <p><strong>replace handoffs</strong> · prototype · build · check · retro · one artifact per stage</p>
+  <p><strong>one stage, one artifact</strong> · design-gated development · Figma-to-web build path</p>
 
   <p>
-    <img alt="workflow" src="https://img.shields.io/badge/workflow-prototype%20%E2%86%92%20build%20%E2%86%92%20check%20%E2%86%92%20retro-1f6feb?style=flat-square">
-    <img alt="skills" src="https://img.shields.io/badge/skills-4-2ea043?style=flat-square">
-    <img alt="handoffs" src="https://img.shields.io/badge/handoffs-replaced-f97316?style=flat-square">
+    <img alt="workflow" src="https://img.shields.io/badge/workflow-prototype%20-%3E%20design%20-%3E%20build%20-%3E%20check%20-%3E%20retro-1f6feb?style=flat-square">
+    <img alt="skills" src="https://img.shields.io/badge/skills-19-2ea043?style=flat-square">
+    <img alt="figma" src="https://img.shields.io/badge/Figma--to--web-8%20stages-f97316?style=flat-square">
     <img alt="artifact rule" src="https://img.shields.io/badge/artifact-one%20per%20stage-8b5cf6?style=flat-square">
     <img alt="audience" src="https://img.shields.io/badge/for-senior%20designers-eab308?style=flat-square">
   </p>
@@ -25,110 +25,167 @@
 
 ## What This Is
 
-Web Design is a Codex skill workflow for senior designers who want to operate as independent web product builders.
+Web Design is a Codex skill workflow for taking a web product from rough intent to prototype, from prototype to development-ready design handoff, from design or prototype to working code, from code to acceptance checks, and from repeated lessons to better skills.
 
-It is not a design-template pack. It is a compact operating system for taking a web product from intent to prototype, from prototype to code, from code to critique, and from critique to a better personal workflow.
-
-The particle field is the metaphor: scattered intent becomes visible structure. Web Design does the same with product direction. It turns vague briefs, customer asks, and design instincts into artifacts that can be tested, built, and improved.
-
-## Who This Is For
-
-- Senior product designers who want to own delivery, not only design direction.
-- UX/UI designers moving from screens to working web products.
-- Web designers who want to ship complete interactive experiences.
-- Design founders and independent product builders.
-- Teams where one strong designer needs to cover product, interaction, implementation, QA, and process improvement.
-
-## The Shift
-
-Traditional web work is split across handoffs:
+The current operating loop is:
 
 ```text
-PM brief -> UX research -> wireframes -> visual design -> frontend -> QA -> retro
+prototype
+  -> web-design
+  -> build or figma-web-build
+  -> check
+  -> retro
 ```
 
-Web Design compresses that into one designer-owned loop:
+For Figma or screenshot-driven implementation, `figma-web-build` coordinates a dedicated development chain that analyzes the design, maps it to the repository, implements code, fills interaction states, aligns browser rendering, verifies in real viewports, and finishes with quality checks.
 
-```text
-prototype -> build -> check -> retro
-```
-
-The designer still uses product thinking, research synthesis, engineering judgment, visual critique, and QA methods. The difference is that those methods are internal tools. They do not create extra handoff documents unless they directly improve the stage artifact.
+This is not a design-template pack. It is a compact operating system for senior designers, design founders, and product builders who want fewer handoff documents and more usable artifacts.
 
 ## Core Rule
 
 One stage, one artifact.
 
-| Stage | Skill | Only artifact |
+Each skill may use product thinking, design critique, repo analysis, QA methods, browser evidence, and retrospection internally. The external output must still match the stage contract.
+
+| Stage | Primary skill | Required artifact |
 |---|---|---|
-| Requirements | `prototype` | Interactive prototype |
-| Development | `build` | Code matching the prototype and current checks |
-| Testing | `check` | Developer adjustment checklist |
-| Retrospective | `retro` | Codex-ready skill upgrade guide |
+| Requirements | `prototype` | Runnable, reviewable interactive prototype |
+| Design | `web-design` | Handoff guidance, `Design Handoff Submission`, or build entry notes |
+| Design review | `web-design-handoff-review` | `Design Handoff Checklist` |
+| Development | `build` | Working code |
+| Figma development | `figma-web-build` | Working code plus concise browser evidence |
+| Testing | `check` | `Adjustment Checklist` |
+| Retrospective | `retro` | `Skill Upgrade Guide` |
 
-## What This Replaces
-
-- PM requirement handoff.
-- UX research synthesis handoff.
-- Interaction spec handoff.
-- Frontend implementation handoff.
-- QA feedback handoff.
-- Process retro handoff.
-
-It does not remove judgment. It moves more judgment into the designer's operating system.
-
-## Skills
+## Main Skills
 
 ### `prototype`
 
-Turn a product idea, PRD, feature request, workflow, or vague brief into a runnable, reviewable interaction prototype.
+Turn a product idea, PRD, feature request, user story, customer feedback, workflow, or vague web-app brief into the requirements-stage artifact: a runnable interactive prototype.
 
-Use it to clarify intent, expose assumptions, define flows, include states, and make the product understandable before code is written.
+### `web-design`
+
+Prepare and gate the design stage between product intent and code. Use it to organize designer submission requirements, decide whether a design needs `web-design-handoff-review`, and produce build entry notes when the design is ready or conditionally ready.
+
+### `web-design-handoff-review`
+
+Review Figma frames, screenshots, design submissions, prototype context, breakpoints, states, content, assets, tokens, and interactions for build readiness. Output only a `Design Handoff Checklist` with `Ready for build: Yes`, `Conditional`, or `No`.
 
 ### `build`
 
-Implement the approved prototype as code.
+Implement or update web app code. Use it after an approved prototype, after `check` returns an adjustment checklist, or when ordinary product intent needs to become code without a Figma-specific path.
 
-Use it when the designer wants the working web experience to match the prototype's behavior, responsive requirements, and visual direction.
+### `figma-web-build`
+
+Coordinate implementation from Figma frames, screenshots, design images, or visual QA evidence. Use it when the source of truth is a design artifact and the page needs browser-level visual and responsive fidelity.
 
 ### `check`
 
-Inspect the implementation and return a developer adjustment checklist.
-
-Use it for visual QA, responsive review, browser behavior, accessibility basics, implementation drift, and developer-readable fixes.
+Inspect implemented code or a running app against the prototype, design baseline, or accepted intent. Output only an actionable `Adjustment Checklist` for the next development pass.
 
 ### `retro`
 
-Turn task evidence into a Codex-ready skill upgrade guide.
+Turn project evidence, failed handoffs, repeated rework, visual QA misses, or user corrections into a Codex-ready `Skill Upgrade Guide`.
 
-Use it after a project or failed pass to improve the workflow itself, not just the current output.
+## Figma-To-Web Chain
 
-## Example Use
+`figma-web-build` can run a light, standard, or strict path. The standard path is:
+
+| Order | Skill | Role |
+|---|---|---|
+| 1 | `figma-web-design-analysis` | Convert Figma frames, screenshots, or images into implementable structure, tokens, states, assets, and unknowns |
+| 2 | `figma-web-repo-analysis` | Inspect framework, package manager, routes, components, styling, assets, commands, and constraints |
+| 3 | `figma-web-implementation-map` | Map design objects to route, component, token, asset, responsive, and implementation strategy |
+| 4 | `figma-web-code-implementation` | Write or update routes, layouts, components, styles, content, data wiring, and assets |
+| 5 | `figma-web-interaction-states` | Add hover, focus, active, disabled, loading, empty, error, modal, tab, carousel, form, and motion states |
+| 6 | `figma-web-visual-alignment` | Tune browser-rendered spacing, typography, media crop, alignment, overflow, and responsive layout |
+| 7 | `figma-web-browser-verification` | Start or reuse a dev server, capture screenshots, inspect console/runtime/DOM, and verify interactions |
+| 8 | `figma-web-quality-finish` | Run lint, typecheck, build, tests, accessibility basics, performance checks, cleanup, and final reporting |
+
+## Supporting Skills
+
+| Skill | Use when |
+|---|---|
+| `prd-to-reviewable-prototype` | A rough PRD needs a shareable low-fidelity review prototype |
+| `responsive-page-adapter` | The task is primarily mobile/tablet adaptation, breakpoint repair, overflow, overlap, or responsive regression |
+| `frontend-visual-qa-coach` | A rendered page needs second-pass visual QA, screenshot-based findings, repair prompts, and reusable development-skill upgrades |
+| `task-retro-upgrader` | A completed task should become a scoped skill-maintenance brief instead of immediately editing a skill |
+
+## Choosing The First Skill
+
+| Situation | Start with |
+|---|---|
+| Only a product idea exists | `prototype` |
+| A rough PRD needs a reviewable prototype | `prd-to-reviewable-prototype` |
+| A designer needs handoff requirements | `web-design` |
+| A design needs build-readiness review | `web-design-handoff-review` |
+| A Figma frame or screenshot should become a page | `figma-web-build` |
+| An approved prototype should become code | `build` |
+| `check` found implementation issues | `build` |
+| The problem is mostly responsive adaptation | `responsive-page-adapter` |
+| A rendered page needs independent acceptance | `check` |
+| A completed loop should improve the skills | `retro` or `task-retro-upgrader` |
+
+## Recommended End-To-End Paths
+
+New page with design handoff:
 
 ```text
-Use prototype to turn this rough SaaS dashboard idea into a reviewable interaction prototype.
+prototype
+  -> web-design
+  -> web-design-handoff-review
+  -> figma-web-build
+  -> check
+  -> build
+  -> check
+  -> retro
 ```
 
-```text
-Use build to implement the prototype in this repo. Match the approved flows and states.
-```
+No Figma, only product intent:
 
 ```text
-Use check to inspect the app against the prototype and return only the developer adjustment checklist.
+prototype
+  -> web-design
+  -> build
+  -> check
+  -> retro
 ```
 
+Existing Figma ready for implementation:
+
 ```text
-Use retro to convert this task's lessons into skill upgrade guidance.
+web-design-handoff-review
+  -> figma-web-build
+  -> check
+  -> build
+  -> check
+  -> retro
+```
+
+Existing page with visual or responsive issues:
+
+```text
+frontend-visual-qa-coach
+  -> build or responsive-page-adapter
+  -> check
 ```
 
 ## Repository Map
 
 ```text
 skills/
-  prototype/  Requirements -> interactive prototype
-  build/      Development -> working code
-  check/      Testing -> adjustment checklist
-  retro/      Retrospective -> skill upgrade guide
+  prototype/                         Requirements -> interactive prototype
+  web-design/                        Design-stage handoff preparation and build gate
+  web-design-handoff-review/         Design handoff checklist
+  build/                             Development -> working code
+  figma-web-build/                   Figma-to-web orchestration
+  figma-web-*/                       Figma design analysis, repo scan, mapping, code, states, alignment, browser verification, finish
+  check/                             Testing -> adjustment checklist
+  retro/                             Retrospective -> skill upgrade guide
+  prd-to-reviewable-prototype/       Rough PRD -> reviewable low-fidelity prototype
+  responsive-page-adapter/           Responsive repair and validation
+  frontend-visual-qa-coach/          Visual QA coach and repair prompt generator
+  task-retro-upgrader/               Scoped skill-maintenance brief
 
 docs/
   philosophy.md

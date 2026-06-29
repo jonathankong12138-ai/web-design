@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Browser Verification"
+  short_description: "Verify design builds in real browsers"
+  default_prompt: "Use $figma-web-browser-verification to capture and verify this implemented page."

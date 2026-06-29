@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Visual Alignment"
+  short_description: "Align browser UI to design evidence"
+  default_prompt: "Use $figma-web-visual-alignment to refine this page against the design."
