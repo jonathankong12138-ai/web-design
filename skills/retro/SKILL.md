@@ -9,19 +9,21 @@ Convert task evidence into precise instructions for upgrading the Web Design ski
 
 ## Output Contract
 
-The only deliverable is `Skill Upgrade Guide`. It must be directly usable by Codex to patch one or more of these skills: `prototype`, `build`, `check`, `retro`.
+The only deliverable is `Skill Upgrade Guide`. It must be directly usable by Codex to patch one or more of these skills: `prototype`, `build`, `check`, `retro`, or a directly implicated web-design-adjacent skill such as `responsive-page-adapter`.
 
 Do not produce a generic retrospective, team health report, sprint summary, or narrative recap unless the user explicitly asks for it.
 
 ## Workflow
 
 1. Review the completed task: user request, prototype, code changes, checklist items, verification results, user corrections, and repeated rework.
-2. Identify the failure mode or improvement opportunity. Prefer concrete evidence over general impressions.
-3. Decide which skill should change. If the issue crosses stages, produce one section per target skill.
-4. Write instruction changes in imperative form, ready to paste into `SKILL.md`.
-5. Include trigger changes so the skill activates or behaves differently next time.
-6. Include an anti-pattern that prevents recurrence.
-7. Include an acceptance example that can be used to test whether the upgraded skill works.
+2. Decide which skill or skills are likely upgrade targets, then read the current `SKILL.md` for each target before writing recommendations.
+3. If the task concerns skill design quality, triggering, validation, or generalization, consult current authoritative skill-authoring references before recommending changes.
+4. Identify the failure mode or improvement opportunity. Prefer concrete evidence over general impressions, and compare it against the current skill text.
+5. Decide which skill should change. If the issue crosses stages, produce one section per target skill.
+6. Write instruction changes in imperative form, ready to paste into `SKILL.md`. Recommend only changes that are missing from the current skill, or clearly strengthen weak trigger or validation wording.
+7. Include trigger changes so the skill activates or behaves differently next time.
+8. Include an anti-pattern that prevents recurrence.
+9. Include an acceptance example that can be used to test whether the upgraded skill works.
 
 ## Template
 
@@ -29,7 +31,7 @@ Do not produce a generic retrospective, team health report, sprint summary, or n
 # Skill Upgrade Guide
 
 ## Target Skill
-[prototype | build | check | retro]
+[prototype | build | check | retro | responsive-page-adapter | other named skill]
 
 ## Observed Failure
 [The concrete issue observed in this task.]

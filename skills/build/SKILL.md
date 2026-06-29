@@ -47,6 +47,10 @@ Use this sequence:
 5. Verify after changing with the same measurable value in browser. Do not rely only on visual intuition.
 6. Preserve adjacent constraints: no horizontal overflow, no desktop regression from mobile fixes, no reduced-motion violation, and no patch to hidden DOM mistaken for the visible element.
 
+For repeated visual feedback on the same responsive page, maintain a small geometry constraint ledger in working notes before patching: section or module, state or slide, requested numeric constraint, CSS owner, verification viewport, and regression surface.
+
+After three or more screenshot fixes on one page, pause and consolidate before continuing. Inspect whether the repeated fixes reveal a wrong module structure, wrong state source, wrong media fit rule, or control anchoring issue.
+
 Map common visual requests to layout primitives:
 
 - For spacing, measure the rendered distance between boxes and set the responsible layout variable.
@@ -56,6 +60,7 @@ Map common visual requests to layout primitives:
 - For rough motion, define entering and leaving states, direction, click guards, timer cleanup, and a reduced-motion fallback.
 - For state synchronization bugs, inspect the visible state source and any cloned, delayed, autoplay, or transition state before patching.
 - For sections that feel too tall or empty, measure content bottom, controls, and section bottom before changing height.
+- For carousel, tab, or internal-scroll sections, verify first, middle, and last state when available, and keep controls anchored to the section rather than the active content.
 
 Avoid broad final `!important` patches until the visible element, active state, and responsible CSS layer are known.
 
