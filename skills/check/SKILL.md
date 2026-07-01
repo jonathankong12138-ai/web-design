@@ -55,6 +55,10 @@ Verification: [how build should verify the fix]
 - Mark unmeasured performance as potential impact, not measured regression.
 - If a finding cannot cite prototype intent or observed behavior, phrase it as a question, not a defect.
 - Avoid implementation prescriptions that conflict with the repo's existing architecture unless the current architecture causes the defect.
+- For visual QA findings that request numeric spacing, typography, crop, or motion behavior, include the measured rendered value and the visible boxes used for measurement. If a CSS property appears correct but the visual result is wrong, name the likely hidden contributor: fixed or minimum height, grid or flex alignment, transform, max-width, child margin, pseudo-element, runtime CSS variable, generated DOM, or state class.
+- For interaction findings involving carousels, scroll containers, overlays, or masks, include evidence for idle-before, active-during, and idle-after states. The developer instruction should say which state must hide, show, or move, and how to verify restoration after interaction settles.
+- For WebGL, canvas, shader, hover mask, scroll-pinned, sticky, selection-driven media, or scroll-triggered background modules, include dynamic-state evidence: idle state, triggered state, and settled or next state. Report visual boundaries, blank or invisible canvas, unintended noise, alpha-mask cutoff, z-index/media-layer conflicts, text overlap, hover exit behavior, and reduced-motion behavior as first-class findings.
+- For Shopify/Liquid visual QA involving repeated project blocks, sticky panels, active media-linked text, or config-driven sections, check the specific active block shown in the screenshot, not only the first/default block. Include measurements for active index, scroll position, active title box, wrapper box, description box, sticky parent box, and the rendered gap when spacing is the issue.
 
 ## Scope
 
